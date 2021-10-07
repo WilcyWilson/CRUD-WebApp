@@ -1,28 +1,26 @@
-### Requirements for the project
+### JSP 
 
-1. JDK
-2. IDE: Netbeans, Eclipse
-3. Java EE
-4. Oracle or MySQL DB
-5. Glassfish/Tomcat Server (Change Port Number if occupied by Oracle or others)
+- Template Engine.
+- Can be thought of as an extension to Servlet because it provides more functionality than servlet such as expresion language, JSTL etc.
+- JSP page consists of HTML tags and JSP tags.
+- JSP pages are easier to maintain than Servlet because we can seperate desigining and deployment.
+- Additional features like Expression Language, Custom Tags etc.
 
-### Servlet
-- API that interface and classes to create a web application.
-- Need to implement the interfaces to create a Servlet.
-- Extends capabiliities of server, response to incoming request by client etc.
-- Servlet is a web component deployed on the server to create a dynamic web page.
+### Advantages of JSP over servlet
 
-Note: Servlets are used instead of Common Gateway Interface(CGI) because CGI creates processes and acts as a multi processes which easily overloads the server. In Servlets java itself converts servlets processes to threads and those threads are optimized by the Java Servlets. 
+- Extension to Servlet (All features of Servlet with additional features)
+- Easy to maintain (Business Logic different than presentatio logic)
+- Fast Development: No need to recompile and redeploy. (Servlets code needs to be updated and recompiled everytime)
 
-### Request Dispatcher in servlets
-Interface that provides the facility of dispatching the request to another resource it may be html, servlet or jsp. Can be used to include content of another resource also.
+### JDBC
+- Java Database Connectivity
+- Java API to connect and execute the query with the database.
+- JDBC API uses JDBC drivers to connect with the database.
+- 4 types JDBC drivers for different purpose and Database System.
+- CRUD operation
 
-Two methods:
-Forward: Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file)
-Include: Includes the content of a resource (servlet, JSP page, or HTML file) in the response
+![JDBC](jdbc.png)
 
-### Servlet Important Parts
+## AdminLogin Servlet in Source Packages (src/java/servlets)
 
-1. HTML/CSS/JS for Frontend
-2. Java servlet program with backend part & logical methods
-3. Web.xml file to control flow of web app & link particular servlet to specific web app page. This makes sure linking part is linked for the IDE and also manages dependencies.
+- javax Library is a must to write Servlet code.
