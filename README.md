@@ -1,3 +1,3 @@
-## CRUD Demo using JSP, Servlets and JDBC
-
+## CRUD Demo using JSP, Servlet, JDBC and MySQL
+ 
 ![Demo](test.gif)
